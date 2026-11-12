@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Web App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f5fa;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .card {
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+      text-align: center;
+    }
+    h1 { color: #1a73e8; }
+    button {
+      background: #1a73e8;
+      color: #ffffff;
+      border: none;
+      padding: 10px 22px;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    p { color: #333333; font-size: 18px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Hello from Google App Engine</h1>
+    <p id="msg">Your Flask web app is running.</p>
+    <button onclick="showTime()">Show Time</button>
+  </div>
+  <script>
+    function showTime() {
+      document.getElementById("msg").innerText = "Current time: " + new Date().toLocaleString();
+    }
+  </script>
+</body>
+</html>
